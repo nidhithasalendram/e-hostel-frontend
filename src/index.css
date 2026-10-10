@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulse badge animation */
+.status-badge {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+}
+
+.status-active {
+  @apply bg-emerald-100 text-emerald-800 border border-emerald-200;
+}
+
+.status-pending {
+  @apply bg-amber-100 text-amber-800 border border-amber-200;
+}
+
+.status-danger {
+  @apply bg-rose-100 text-rose-800 border border-rose-200;
+}
+
+.status-info {
+  @apply bg-sky-100 text-sky-800 border border-sky-200;
+}
